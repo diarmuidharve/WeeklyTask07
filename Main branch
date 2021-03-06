@@ -1,0 +1,7 @@
+test_str = "$ python es.py moby-dick.txt"
+  
+counter = test_str.count('e', 'E') 
+  
+print ("$ python es.py moby-dick.txt : "
+                           +  str(counter)) 
+
