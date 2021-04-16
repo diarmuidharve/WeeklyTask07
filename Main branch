@@ -1,7 +1,12 @@
-test_str = "$ python es.py moby-dick.txt"
-  
-counter = test_str.count('e', 'E') 
-  
-print ("$ python es.py moby-dick.txt : "
-                           +  str(counter)) 
+def countE(filename):
+    file = open(filename,"r")
+    text = file.read()
 
+    count = 0 
+    for x in text: 
+        if x == "e" or x == "E":
+            count += 1
+            
+    return count
+
+print(countE("Weekltask07.txt"))
